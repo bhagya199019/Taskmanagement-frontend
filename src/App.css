@@ -1,38 +1,72 @@
-.App {
+.app {
+  font-family: Arial, sans-serif;
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  max-width: 600px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.task {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.task-list {
+  margin: 20px 0;
 }
 
-.App-link {
-  color: #61dafb;
+input, textarea {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.task-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.task-form input[type="text"],
+.task-form textarea,
+.task-form input[type="date"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task-form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.task-item button {
+  margin: 5px;
 }
